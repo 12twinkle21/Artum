@@ -12,15 +12,17 @@ burgerBtn.addEventListener('click', function (evt) {
    else {
       burgerMenu.classList.add('no-active-menu');
       burgerMenu.classList.remove('active-menu');
+
+      window.addEventListener('click', function () {
+         if (burgerMenu.classList.contains('active-menu')) {
+            burgerMenu.classList.remove('active-menu');
+            burgerMenu.classList.add('no-active-menu')
+         }
+      })
    }
 })
 
-window.addEventListener('click', function () {
-   if (burgerMenu.classList.contains('active-menu')) {
-      burgerMenu.classList.remove('active-menu');
-      burgerMenu.classList.add('no-active-menu')
-   }
-})
+
 
 
 
