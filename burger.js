@@ -2,7 +2,6 @@ let burgerBtn = document.querySelector('.nav-burger');
 let burgerMenu = document.querySelector('.burger-menu');
 
 
-
 burgerBtn.addEventListener('click', function (evt) {
    evt.stopPropagation();
    if (burgerMenu.classList.contains('no-active-menu')) {
@@ -22,7 +21,7 @@ window.addEventListener('click', function () {
    }
 })
 
-window.addEventListener('click', function () {
+document.addEventListener('click', function () {
    alert('Кек');
 })
 
