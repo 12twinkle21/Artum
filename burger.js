@@ -3,8 +3,8 @@ let burgerMenu = document.querySelector('.burger-menu');
 
 
 
-burgerBtn.addEventListener('click', function (evt) {
-   evt.stopPropagation();
+burgerBtn.addEventListener('click', function () {
+   
    if (burgerMenu.classList.contains('no-active-menu')) {
       burgerMenu.classList.add('active-menu');
       burgerMenu.classList.remove('no-active-menu');
