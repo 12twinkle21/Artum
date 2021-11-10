@@ -14,16 +14,14 @@ burgerBtn.addEventListener('click', function (evt) {
    }
 })
 
-window.addEventListener('click', function () {
+body.addEventListener('click', function () {
    if (burgerMenu.classList.contains('active-menu')) {
       burgerMenu.classList.remove('active-menu');
       burgerMenu.classList.add('no-active-menu')
    }
 })
 
-body.addEventListener('click', function () {
-   alert('Кек');
-})
+
 
 
   
