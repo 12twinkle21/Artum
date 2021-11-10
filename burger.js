@@ -1,6 +1,6 @@
 let burgerBtn = document.querySelector('.nav-burger');
 let burgerMenu = document.querySelector('.burger-menu');
-
+let body = document.querySelector('body')
 
 burgerBtn.addEventListener('click', function (evt) {
    evt.stopPropagation();
@@ -21,7 +21,7 @@ window.addEventListener('click', function () {
    }
 })
 
-document.addEventListener('click', function () {
+body.addEventListener('click', function () {
    alert('Кек');
 })
 
