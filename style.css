@@ -17,6 +17,8 @@ body{
 }
 .active-menu{
    display:block;
+   animation-duration: 0.5s;
+   animation-name: slide;
 }
 .text-2{
    margin-top: 15px;
@@ -37,6 +39,7 @@ body{
    width: 30px;
    height: 30px;
    margin-bottom: -8px;
+   transform: translateY(-5px);
 }
 
 /* Header */
@@ -647,8 +650,12 @@ footer{
 .footer-socials-item:hover{
    width: 40px;
    height: 40px;
+   margin-right: 22px;
 }
-
+.footer-socials-item:last-child,
+.footer-socials-item:last-child:hover{
+   margin-right: 0;
+}
 /* Media */
 
 @media(max-width: 1150px){
@@ -836,3 +843,15 @@ footer{
       line-height: 50px;
    }
 }
+
+/* Animation */
+
+@keyframes slide {
+   from {
+     left: -50px;
+   }
+ 
+   to {
+    left: 5px;
+   }
+ }
