@@ -159,9 +159,9 @@ header a:hover{
    position: relative
 }
 .burger-menu{
-   max-width: 400px;
+   width: 300px;
    background-color:white;
-   padding: 10px 15px;
+   padding: 20px 15px;
    position: absolute;
    top: 65px;
    left: 5px;
@@ -842,13 +842,16 @@ footer{
       font-size: 30px;
       line-height: 50px;
    }
+   .burger-menu{
+      width: 200px;
+   }
 }
 
 /* Animation */
 
 @keyframes slide {
    from {
-     left: -50px;
+     left: -300px;
    }
  
    to {

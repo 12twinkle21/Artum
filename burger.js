@@ -1,6 +1,6 @@
 let burgerBtn = document.querySelector('.nav-burger');
 let burgerMenu = document.querySelector('.burger-menu');
-let body = document.querySelector('body')
+let body = document.querySelector('body');
 
 burgerBtn.addEventListener('click', function (evt) {
    evt.stopPropagation();
@@ -17,7 +17,7 @@ burgerBtn.addEventListener('click', function (evt) {
 body.addEventListener('click', function () {
    if (burgerMenu.classList.contains('active-menu')) {
       burgerMenu.classList.remove('active-menu');
-      burgerMenu.classList.add('no-active-menu')
+      burgerMenu.classList.add('no-active-menu');
    }
 })
 
